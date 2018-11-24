@@ -16,7 +16,23 @@ export class LoginComponent {
   constructor(private loginService: LoginService, private router: Router) {
       this.user = new User();
   }
- 
+
+  register(){
+    if(this.user.username && this.user.password) {
+      this.loginService.register(this.user).subscribe(result => {
+        if(result['status'] === 'success') {
+          this.router.navigate(['/home']);
+        } else {
+          alert('Wrong username password');
+        }
+      }, error => {
+        console.log('error is ', error);
+      });
+    } else {
+        alert('enter user name and password');
+    }
+  }
+
   validateLogin() {
     if(this.user.username && this.user.password) {
         this.loginService.validateLogin(this.user).subscribe(result => {
