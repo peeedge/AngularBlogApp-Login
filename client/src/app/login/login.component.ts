@@ -20,6 +20,7 @@ export class LoginComponent {
   register(){
     if(this.user.username && this.user.password) {
       this.loginService.register(this.user).subscribe(result => {
+        debugger;
         if(result['status'] === 'success') {
           this.router.navigate(['/home']);
         } else {

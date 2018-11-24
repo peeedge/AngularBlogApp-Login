@@ -38,9 +38,11 @@ app.post('/api/user/login', (req, res) => {
 app.post('/api/user/register', (req, res) => {
     mongoose.connect(url,{ useMongoClient: true }, function(err){
         if(err) throw err;
-        User.save({
+        var user = new User(req.body)
+        user.save({
             username : req.body.username, password : req.body.password
         }, function(err, user){
+            debugger;
             if(err) throw err;
             if(user.length === 1){  
                 return res.status(200).json({
