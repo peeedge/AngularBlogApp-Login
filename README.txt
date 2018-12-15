@@ -6,7 +6,7 @@ Redirecting to the Home Component
 The code was fine, you just didnt have the user object: roy, 123 in the mongo database - 11/24/2018
 
 This will start the mongo db server 
-mongod --dbpath=C:\db_mongo
+mongod --dbpath=C:\mongo
 
 This will start the NG Live Development Server
 c:\batches\AngularBlogApp-Home\client
