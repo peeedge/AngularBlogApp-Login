@@ -5,5 +5,4 @@ start startmongodbserver.bat
 cd ..
 cd client
 start startnglivedevserver.bat
-mean
-start https://localhost:4200
+start http://localhost:4200
