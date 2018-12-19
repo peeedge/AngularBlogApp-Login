@@ -35,6 +35,10 @@ app.post('/api/user/login', (req, res) => {
     });
 })
 
+//Passport Middleware - this was from https://www.youtube.com/watch?v=6pdFXmTfkeE
+// app.use(passport.initialize());
+// app.use(passport.session());
+
 app.listen(3000, () => console.log('blog server running on port 3000!'))
 
 

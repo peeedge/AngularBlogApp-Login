@@ -15,3 +15,15 @@ npm start
 This will start the blog server on port 3000 
 c:\batches\AngularBlogApp-Home\server
 node app.js
+
+MEAN Stack Front To Back [Part 4] - API Authentication and Token
+https://www.youtube.com/watch?v=6pdFXmTfkeE
+
+If the video above doesn't work - maybe we take a look into that person's tutorial series
+https://www.youtube.com/watch?v=uONz0lEWft0 - MEAN Stack Front To Back [Part 1] - Project Introduction
+
+although this guys's youtube videos didnt have a github url
+
+so then I googled MEAN Authentication App  and found the mean auth app on github below - 
+
+https://github.com/bradtraversy/meanauthapp
