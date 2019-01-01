@@ -5,6 +5,8 @@ const mongoose = require('mongoose');
 const User = require('./model/user');
 const url = 'mongodb://localhost/blogDb';
 
+var passport = require('passport');
+
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended : false}))
  
