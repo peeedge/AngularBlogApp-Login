@@ -27,3 +27,6 @@ although this guys's youtube videos didnt have a github url
 so then I googled MEAN Authentication App  and found the mean auth app on github below - 
 
 https://github.com/bradtraversy/meanauthapp
+
+THIS LOOKS LIKE A BIG PIECE OF THE AUTHENTICATION PUZZLE
+https://stackoverflow.com/questions/18708428/how-to-do-authentication-with-node-js-and-mean-stack
