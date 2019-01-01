@@ -6,6 +6,7 @@ const User = require('./model/user');
 const url = 'mongodb://localhost/blogDb';
 
 var passport = require('passport');
+var LocalStrategy = require('passport-local').Strategy;
 
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended : false}))
@@ -34,6 +35,9 @@ passport.use(new LocalStrategy(
       })
   }
 ));
+
+app.use(passport.initialize());
+app.use(passport.session());
  
 app.post('/api/user/login', (req, res) => {
     mongoose.connect(url,{ useMongoClient: true }, function(err){
