@@ -12,6 +12,7 @@ import { Router } from '@angular/router';
 export class LoginComponent {
  
   public user : User;
+  public loggedIn : boolean;
  
   constructor(private loginService: LoginService, private router: Router) {
       this.user = new User();
@@ -21,8 +22,9 @@ export class LoginComponent {
     if(this.user.username && this.user.password) {
         this.loginService.validateLogin(this.user).subscribe(result => {
         console.log('result is ', result);
+        this.loggedIn = result['status'] === 'success';
         if(result['status'] === 'success') {
-          this.router.navigate(['/home']);
+          //this.router.navigate(['/home']);
         } else {
           alert('Wrong username password');
         }

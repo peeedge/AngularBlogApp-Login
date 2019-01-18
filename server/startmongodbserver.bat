@@ -1,2 +1,2 @@
 @echo off
-mongod --dbpath=C:\db_mongo
+mongod --dbpath=C:\mongo
